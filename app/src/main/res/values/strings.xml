@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">KILL</string>
+    <string name="golock">GOLOCK</string>
+    <string name="gounlock">GOUNLOCK</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="one_note">tap item, then locked</string>
+    <string name="two_note">tap item, then unlocked</string>
+    <string name="one_noteD">system apps below, be careful!</string>
+    <string name="show_sys">show system apps</string>
+    <string name="no_show_sys">not show system apps</string>
+    <string name="about_us">about us</string>
+    <string name="no_root">please get root permission before!</string>
+    <string name="has_locked">has been locked!</string>
+    <string name="has_unlocked">has been unlocked!</string>
+</resources>

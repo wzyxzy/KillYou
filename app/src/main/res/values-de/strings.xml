@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">töten</string>
+    <string name="golock">Gehen lock</string>
+    <string name="gounlock">Schließe frei</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="one_note">Tippen Sie auf Element, dann gesperrt</string>
+    <string name="two_note">Tippen Sie auf Element, dann entsperrt</string>
+    <string name="one_noteD">System-Apps unten, seien Sie vorsichtig!</string>
+    <string name="show_sys">Zeige System-Apps</string>
+    <string name="no_show_sys">Keine System-Apps anzeigen</string>
+    <string name="about_us">Über uns</string>
+    <string name="no_root">Bitte root berechtigung vor!</string>
+    <string name="has_locked">wurde verschlossen!</string>
+    <string name="has_unlocked">Wurde freigeschaltet!</string>
+</resources>

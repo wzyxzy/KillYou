@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.wzy.killyou.fragments.FragmentTwo">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/two_note" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/sliteColorBoy" />
+
+            <com.wzy.killyou.Views.MyListView
+                android:id="@+id/listtwo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@color/sliteColorBoy"
+                android:dividerHeight="10dp" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/colorBoy" />
+
+            <TextView
+                android:id="@+id/alarm_sys2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="20dp"
+                android:text="@string/one_noteD"
+                android:textColor="@color/red"
+                android:visibility="gone" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="10dp"
+                android:background="@color/sliteColorBoy" />
+
+            <com.wzy.killyou.Views.MyListView
+                android:id="@+id/listtwoS"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:divider="@color/sliteColorBoy"
+                android:dividerHeight="10dp" />
+        </LinearLayout>
+
+
+    </ScrollView>
+
+
+</LinearLayout>

@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">快冻结</string>
+    <string name="golock">去冻结</string>
+    <string name="gounlock">去解冻</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="one_note">点击应用，即可冻结</string>
+    <string name="two_note">点击应用，即可解冻</string>
+    <string name="one_noteD">以下是系统软件，请慎用</string>
+    <string name="show_sys">显示系统软件</string>
+    <string name="no_show_sys">不显示系统软件</string>
+    <string name="about_us">关于我们</string>
+    <string name="no_root">请先获取ROOT权限!</string>
+    <string name="has_locked">已被冻结!</string>
+    <string name="has_unlocked">已被解冻!</string>
+
+</resources>
