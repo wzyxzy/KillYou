@@ -74,13 +74,7 @@ public class FragmentOne extends Fragment {
         listone.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                String disable = Manage.Disable(appInfoOne.get(i).getPackageName());
-                if (disable == null) {
-                    Toast.makeText(getActivity(), getActivity().getString(R.string.no_root), Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(getActivity(), appInfoOne.get(i).getAppName() + getActivity().getString(R.string.has_locked), Toast.LENGTH_SHORT).show();
-                    initData(getContext());
-                }
+                toastFrag(i);
             }
         });
         listoneS = (ListView) layout.findViewById(R.id.listoneS);
@@ -88,16 +82,26 @@ public class FragmentOne extends Fragment {
         listoneS.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                String disable = Manage.Disable(appInfoOneS.get(i).getPackageName());
-                if (disable == null) {
-                    Toast.makeText(getActivity(), getActivity().getString(R.string.no_root), Toast.LENGTH_SHORT).show();
-                } else {
-                    Toast.makeText(getActivity(), appInfoOneS.get(i).getAppName() + getActivity().getString(R.string.has_locked), Toast.LENGTH_SHORT).show();
-                    initData(getContext());
-                }
+                toastFrag(i);
             }
         });
+
+
     }
 
+    private void toastFrag(int i) {
+        String disable = Manage.Disable(appInfoOne.get(i).getPackageName());
+        if (disable != null && disable.equalsIgnoreCase(getActivity().getString(R.string.system_package_name))) {
+            Toast.makeText(getActivity(), getActivity().getString(R.string.cannot_disable), Toast.LENGTH_SHORT).show();
+        } else {
+            if (disable == null) {
+                Toast.makeText(getActivity(), getActivity().getString(R.string.no_root), Toast.LENGTH_SHORT).show();
+            } else {
+                Toast.makeText(getActivity(), appInfoOneS.get(i).getAppName() + getActivity().getString(R.string.has_locked), Toast.LENGTH_SHORT).show();
+                initData(getContext());
+            }
+        }
+
+    }
 
 }

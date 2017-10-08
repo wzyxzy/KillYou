@@ -141,6 +141,9 @@ public class Main extends AppCompatActivity implements RadioGroup.OnCheckedChang
             AppInfo appInfo = new AppInfo();
             appInfo.setAppName(packageInfo.applicationInfo.loadLabel(context.getPackageManager()).toString());
             appInfo.setPackageName(packageInfo.packageName);
+            if (packageInfo.packageName.equalsIgnoreCase("com.wzy.killyou")) {
+                continue;
+            }
             appInfo.setAppIcon(packageInfo.applicationInfo.loadIcon(context.getPackageManager()));
             appInfo.setEnabled(packageInfo.applicationInfo.enabled);
             appInfo.setFlag(packageInfo.applicationInfo.flags & ApplicationInfo.FLAG_SYSTEM);

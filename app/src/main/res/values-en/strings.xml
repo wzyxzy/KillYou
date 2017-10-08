@@ -13,5 +13,6 @@
     <string name="about_us">about us</string>
     <string name="no_root">please get root permission before!</string>
     <string name="has_locked">has been locked!</string>
+    <string name="cannot_disable">don\'t disable itself!</string>
     <string name="has_unlocked">has been unlocked!</string>
 </resources>

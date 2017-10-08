@@ -13,5 +13,6 @@
     <string name="about_us">Über uns</string>
     <string name="no_root">Bitte root berechtigung vor!</string>
     <string name="has_locked">wurde verschlossen!</string>
+    <string name="cannot_disable">don\'t disable itself!</string>
     <string name="has_unlocked">Wurde freigeschaltet!</string>
 </resources>
