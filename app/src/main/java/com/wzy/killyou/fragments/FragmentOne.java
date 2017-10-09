@@ -74,7 +74,7 @@ public class FragmentOne extends Fragment {
         listone.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                toastFrag(i);
+                toastFrag(i, 0);
             }
         });
         listoneS = (ListView) layout.findViewById(R.id.listoneS);
@@ -82,22 +82,31 @@ public class FragmentOne extends Fragment {
         listoneS.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> adapterView, View view, int i, long l) {
-                toastFrag(i);
+                toastFrag(i, 1);
             }
         });
 
 
     }
 
-    private void toastFrag(int i) {
-        String disable = Manage.Disable(appInfoOne.get(i).getPackageName());
+    private void toastFrag(int i, int j) {
+        String appName = null;
+        String disable = null;
+        if (j == 0) {
+            appName =appInfoOne.get(i).getAppName();
+            disable = Manage.Disable(appInfoOne.get(i).getPackageName());
+        } else {
+            appName = appInfoOneS.get(i).getAppName();
+            disable = Manage.Disable(appInfoOneS.get(i).getPackageName());
+        }
+
         if (disable != null && disable.equalsIgnoreCase(getActivity().getString(R.string.system_package_name))) {
             Toast.makeText(getActivity(), getActivity().getString(R.string.cannot_disable), Toast.LENGTH_SHORT).show();
         } else {
             if (disable == null) {
                 Toast.makeText(getActivity(), getActivity().getString(R.string.no_root), Toast.LENGTH_SHORT).show();
             } else {
-                Toast.makeText(getActivity(), appInfoOneS.get(i).getAppName() + getActivity().getString(R.string.has_locked), Toast.LENGTH_SHORT).show();
+                Toast.makeText(getActivity(), appName + getActivity().getString(R.string.has_locked), Toast.LENGTH_SHORT).show();
                 initData(getContext());
             }
         }

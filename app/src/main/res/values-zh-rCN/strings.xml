@@ -15,5 +15,6 @@
     <string name="has_locked">已被冻结!</string>
     <string name="cannot_disable">不要冻结自己!</string>
     <string name="has_unlocked">已被解冻!</string>
+    <string name="system_package_name">com.wzy.killyou</string>
 
 </resources>

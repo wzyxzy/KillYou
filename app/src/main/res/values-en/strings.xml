@@ -15,4 +15,5 @@
     <string name="has_locked">has been locked!</string>
     <string name="cannot_disable">don\'t disable itself!</string>
     <string name="has_unlocked">has been unlocked!</string>
+    <string name="system_package_name">com.wzy.killyou</string>
 </resources>
